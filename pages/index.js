@@ -22,7 +22,7 @@ const IndexPage = () => {
               please{" "}
               <a
                 className="text-tertiary dark:text-darkTertiary"
-                href="mailto:gavin@shababulalam.com"
+                href="mailto:sababul37@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
