@@ -63,9 +63,8 @@ const IndexPage = ({ posts }) => {
         <div className="grid max-w-full gap-16 auto-rows-auto">
           <div>
             <p className="mt-8 md:mt-4">
-              I'm currently shaping the mobile apps at GitHub and crafting app
-              icons for a wide variety of clients. I focus on a high level of craftsmanship to create seamless experiences that solve problems. <br></br><br></br> If you'd like to
-              see my portfolio or work with me on an icon, please{" "}
+              I'm currently shaping the web applications at DocTime and crafting next-generation tele-health solutions with latest tech trends. I focus on orchestrating technology migrations, driving innovation, and ensuring the highest level of software quality. <br></br><br></br> If you'd like to
+              see my portfolio or work with me, please{" "}
               <a
                 className="text-tertiary dark:text-darkTertiary"
                 href="mailto:gavin@shababulalam.com"
@@ -97,35 +96,19 @@ const IndexPage = ({ posts }) => {
               </a>
               <a
                 className="sm:mr-8 text-tertiary dark:text-darkTertiary"
-                href="https://www.threads.net/@gavinmnelson"
+                href="https://www.linkedin.com/in/shababulalam/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Threads
+                LinkedIn
               </a>
               <a
                 className="sm:mr-8 text-tertiary dark:text-darkTertiary"
-                href="https://mastodon.design/@gn"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Mastodon
-              </a>
-              {/* <a
-                className="sm:mr-8 text-tertiary dark:text-darkTertiary"
-                href="https://github.com/gavinmn"
+                href="https://github.com/ShababulAlam"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 GitHub
-              </a> */}
-              <a
-                className="sm:mr-8 text-tertiary dark:text-darkTertiary"
-                href="https://dribbble.com/Gavin/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Dribbble
               </a>
               {/* <Arena /> */}
             </div>
@@ -142,7 +125,8 @@ const IndexPage = ({ posts }) => {
             </Link>
             <ArrowExternal />
           </Section> */}
-          <Section title="Work">
+
+          {/* <Section title="Work">
           <div className="mb-2">
             <Feature
               title={"Copilot Chat for GitHub Mobile"}
@@ -154,10 +138,10 @@ const IndexPage = ({ posts }) => {
           </div>
             <div className="mb-2">
               <Feature
-                title={"Code Search for GitHub Mobile"}
-                date={"Oct 2023"}
+                title={"Progressive Web Application integration in iOS App"}
+                date={"Jan 2024"}
                 href={
-                  "https://github.blog/changelog/2023-10-10-navigate-code-on-the-go/"
+                  "https://apps.apple.com/us/app/dt-healthcare/id1586295223"
                 }
               />
             </div>
@@ -250,9 +234,9 @@ const IndexPage = ({ posts }) => {
                 </div>
               )
             })}
-          </Section>
+          </Section> */}
 
-          <Section title="Projects">
+          {/* <Section title="Projects">
             <div className="mb-4">
               <Project
                 link="/highlights"
@@ -560,7 +544,7 @@ const IndexPage = ({ posts }) => {
                 download={true}
               />
             </div>
-          </Section>
+          </Section> */}
         </div>
       </Layout>
     </>

@@ -27,7 +27,7 @@ export default function SEO({
       />
 
       <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:creator" content="sababulalam" />
+      <meta property="twitter:creator" content="shababulalam" />
       <meta property="twitter:title" content={title} />
       <meta property="twitter:description" content={description} />
 
@@ -60,7 +60,6 @@ export default function SEO({
         href="https://shababulalam.com/images/meta/apple-touch-icon-120x120.png"
         sizes="60x60"
         rel="apple-touch-icon"
-        sizes="120x120"
       />
       <link
         href="https://shababulalam.com/images/meta/favicon-32x32.png"

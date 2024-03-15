@@ -17,10 +17,10 @@ const Header = () => {
         <div className="col-1 row-1">
           <Canvas />
         </div>
-        <div className="z-10 col-1 row-1">
-          <Link href="/" passhref className="mb-4 ">
+        <div className="z-10 rounded-lg col-1 row-1">
+          <Link href="/" passhref='true' className="mb-4 ">
 
-            <LogoInverted />
+            <LogoInverted  />
 
           </Link>
         </div>
@@ -28,7 +28,7 @@ const Header = () => {
       <div className={justLogo ? "hidden" : ""}>
         <h1 className="text-base">Shababul Alam</h1>
         <h2 className="text-tertiary dark:text-darkTertiary">
-          Product & Icon Designer
+          Web Development Specialist & Javascript Enthuasist
         </h2>
       </div>
     </div>

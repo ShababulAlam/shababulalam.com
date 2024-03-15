@@ -14,14 +14,14 @@ const Layout = ({ children }) => {
           <div className="flex flex-row">
             <a
               href="https://shababulalam.com/feed.xml"
-              className="mr-4 text-sm text-tertiary dark:text-darkTertiary"
+              className="hidden mr-4 text-sm text-tertiary dark:text-darkTertiary"
             >
               RSS
             </a>
             <Link
               href="/colophon"
-              passhref
-              className="text-sm text-tertiary dark:text-darkTertiary"
+              passhref="true"
+              className="hidden text-sm text-tertiary dark:text-darkTertiary"
             >
               Colophon
             </Link>
