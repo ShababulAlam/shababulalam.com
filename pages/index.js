@@ -14,10 +14,21 @@ const IndexPage = () => {
         <div className="grid max-w-full gap-16 auto-rows-auto">
           <div>
             <p className="mt-8 md:mt-4">
-              I'm currently shaping the web applications at DocTime and crafting
-              next-generation tele-health solutions with latest tech trends. I
-              focus on orchestrating technology migrations, driving innovation,
-              and ensuring the highest level of software quality. <br></br>
+              I am leading the charge in shaping the future of tele-health
+              through innovative web applications at
+              <a
+                className="pl-1 text-tertiary dark:text-darkTertiary"
+                href="https://doctime.com.bd/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                DocTime
+              </a>
+              . I leverage cutting-edge technology trends to craft
+              next-generation solutions that revolutionize patient care. My
+              focus is on orchestrating seamless technology migrations, driving
+              continuous innovation, and ensuring the highest quality software
+              that empowers both patients and healthcare providers. <br></br>
               <br></br> If you'd like to see my portfolio or work with me,
               please{" "}
               <a
