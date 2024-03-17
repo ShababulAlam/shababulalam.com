@@ -18,10 +18,8 @@ const Header = () => {
           <Canvas />
         </div>
         <div className="z-10 rounded-lg col-1 row-1">
-          <Link href="/" passhref='true' className="mb-4 ">
-
-            <LogoInverted  />
-
+          <Link href="/" passhref="true" className="mb-4 ">
+            <LogoInverted />
           </Link>
         </div>
       </div>
@@ -32,7 +30,7 @@ const Header = () => {
         </h2>
       </div>
     </div>
-  );
+  )
 }
 
 export default Header

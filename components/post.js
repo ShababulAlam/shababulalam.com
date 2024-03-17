@@ -6,7 +6,8 @@ const Post = props => (
     <Link
       as={`posts/${props.href}`}
       href="posts/[slug]"
-      className="text-secondary dark:text-darkSecondary">
+      className="text-secondary dark:text-darkSecondary"
+    >
       {props.title}
     </Link>
   </div>
@@ -14,13 +15,10 @@ const Post = props => (
 
 export default Post
 
-
 export const Feature = props => (
   <div className="grid grid-cols-118-auto">
     <p className=" text-tertiary dark:text-darkTertiary">{props.date}</p>
-    <Link
-      href={props.href}
-      className="text-secondary dark:text-darkSecondary">
+    <Link href={props.href} className="text-secondary dark:text-darkSecondary">
       {props.title}
     </Link>
   </div>

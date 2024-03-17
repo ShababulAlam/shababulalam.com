@@ -1,4 +1,4 @@
-# Shababul Alam 
+# Shababul Alam
 
 The code repository that powers [my personal website and portfolio.](https://shababulalam.com)
 

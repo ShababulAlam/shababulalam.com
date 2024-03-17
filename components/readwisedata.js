@@ -125,8 +125,8 @@ const Readwisedata = ({ book, highlights, highlightIDs, bookID, path }) => {
                   href={`/highlights#${highlightID}`}
                   passhref
                   className="relative flex-shrink-0 p-0.5 transition-all 200ms ease-in-out md:opacity-0  md:group-hover:opacity-100 group-hover:cursor-pointer"
-                  alt="">
-
+                  alt=""
+                >
                   <svg
                     className="link-icon"
                     width="16"
@@ -147,7 +147,6 @@ const Readwisedata = ({ book, highlights, highlightIDs, bookID, path }) => {
                       className="fill-current text-tertiary dark:text-darkTertiary"
                     />
                   </svg>
-
                 </Link>
                 <div className="self-stretch flex-shrink-0 w-0.5 mr-4 ml-2 bg-code dark:bg-darkCode" />
                 <p
@@ -160,11 +159,11 @@ const Readwisedata = ({ book, highlights, highlightIDs, bookID, path }) => {
                   {text}
                 </p>
               </div>
-            );
+            )
           })}
         </div>
       </div>
-    );
+    )
   } else {
     return null
   }
