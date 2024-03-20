@@ -1424,10 +1424,10 @@ postcss@^8.0.9, postcss@^8.4.21:
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
 
-preact@^10.13.1:
-  version "10.13.1"
-  resolved "https://registry.npmjs.org/preact/-/preact-10.13.1.tgz"
-  integrity sha512-KyoXVDU5OqTpG9LXlB3+y639JAGzl8JSBXLn1J9HTSB3gbKcuInga7bZnXLlxmK94ntTs1EFeZp0lrja2AuBYQ==
+preact@^10.20.0:
+  version "10.20.0"
+  resolved "https://registry.yarnpkg.com/preact/-/preact-10.20.0.tgz#191c10a2ee3b9fca1a7ded6375266266380212f6"
+  integrity sha512-wU7iZw2BjsaKDal3pDRDy/HpPB6cuFOnVUCcw9aIPKG98+ZrXx3F+szkos8BVME5bquyKDKvRlOJFG8kMkcAbg==
 
 prettier@2.8.4:
   version "2.8.4"
