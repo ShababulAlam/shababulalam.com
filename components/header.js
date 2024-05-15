@@ -2,6 +2,7 @@ import Link from "next/link"
 import { useRouter } from "next/router"
 import { LogoInverted } from "./svg"
 import Canvas from "./canvas"
+import { motion } from "framer-motion"
 
 const Header = () => {
   const router = useRouter()
@@ -23,12 +24,23 @@ const Header = () => {
           </Link>
         </div>
       </div>
-      <div className={justLogo ? "hidden" : ""}>
-        <h1 className="text-base">Shababul Alam</h1>
-        <h2 className="text-tertiary dark:text-darkTertiary">
-          Web Development Specialist & Javascript Enthuasist
-        </h2>
-      </div>
+
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 0.9,
+          repeatType: "loop",
+          // repeat: Infinity,
+        }}
+      >
+        <div className={justLogo ? "hidden" : ""}>
+          <h1 className="text-base">Shababul Alam</h1>
+          <h2 className="text-tertiary dark:text-darkTertiary">
+            Web Development Specialist & Javascript Enthuasist
+          </h2>
+        </div>
+      </motion.div>
     </div>
   )
 }

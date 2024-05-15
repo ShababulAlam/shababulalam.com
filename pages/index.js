@@ -5,42 +5,85 @@ import fs from "fs"
 import matter from "gray-matter"
 import path from "path"
 import { postFilePaths, POSTS_PATH } from "../lib/mdxUtils"
+import { motion } from "framer-motion"
+
+function shareContent() {
+  // let url = document.getElementById("content-url").value;
+  // let title = document.getElementById("content-title").value;
+  // let text = document.getElementById("content-text").value;
+  let url = "http://shababulalam.com"
+  let title = "Shababul Alams Portfolio"
+  let text = "Share Portfolio"
+  let data = { url: url, text: text, title: title }
+  console.log(data)
+
+  if (!navigator.share) {
+    alert(
+      "Your device does not support the Web Share API. Try on an iPhone or Android phone!",
+    )
+  } else {
+    navigator.share(data)
+  }
+}
 
 const IndexPage = () => {
   return (
     <>
       <Layout>
-        <SEO />
+        <motion.div
+          animate={{
+            scale: [1, 2, 2, 1, 1],
+            rotate: [0, 0, 270, 270, 0],
+            borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+            transition: {
+              repeatType: "loop",
+              repeat: Infinity,
+            },
+          }}
+        >
+          <SEO />
+        </motion.div>
+
         <div className="grid max-w-full gap-16 auto-rows-auto">
           <div>
-            <p className="mt-8 md:mt-4">
-              I am leading the charge in shaping the future of tele-health
-              through innovative web applications at
-              <a
-                className="pl-1 text-tertiary dark:text-darkTertiary"
-                href="https://doctime.com.bd/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                DocTime
-              </a>
-              . I leverage cutting-edge technology trends to craft
-              next-generation solutions that revolutionize patient care. My
-              focus is on orchestrating seamless technology migrations, driving
-              continuous innovation, and ensuring the highest quality software
-              that empowers both patients and healthcare providers. <br></br>
-              <br></br> If you'd like to see my portfolio or work with me,
-              please{" "}
-              <a
-                className="text-tertiary dark:text-darkTertiary"
-                href="mailto:sababul37@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                get in touch
-              </a>
-              .
-            </p>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration: 0.5,
+                repeatType: "loop",
+              }}
+            >
+              <p className="mt-8 md:mt-4">
+                I am leading the charge in shaping the future of tele-health
+                through innovative web applications at
+                <a
+                  className="pl-1 text-tertiary dark:text-darkTertiary"
+                  href="https://doctime.com.bd/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  DocTime
+                </a>
+                . I leverage cutting-edge technology trends to craft
+                next-generation solutions that revolutionize patient care. My
+                focus is on orchestrating seamless technology migrations,
+                driving continuous innovation, and ensuring the highest quality
+                software that empowers both patients and healthcare providers.{" "}
+                <br></br>
+                <br></br> If you'd like to see my portfolio or work with me,
+                please{" "}
+                <a
+                  className="text-tertiary dark:text-darkTertiary"
+                  href="mailto:sababul37@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  get in touch
+                </a>
+                .
+              </p>
+            </motion.div>
           </div>
           <Section title="Connect">
             <div className="flex flex-row self-stretch justify-between sm:justify-start ">
@@ -110,6 +153,15 @@ const IndexPage = () => {
               </p>
             </div>
           </Section>
+
+          <div className="flex">
+            <section
+              className="p-2 text-sm border rounded"
+              onClick={shareContent}
+            >
+              Share this page
+            </section>
+          </div>
         </div>
       </Layout>
     </>
