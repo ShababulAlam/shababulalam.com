@@ -7,23 +7,24 @@ import path from "path"
 import { postFilePaths, POSTS_PATH } from "../lib/mdxUtils"
 import { motion } from "framer-motion"
 
-function shareContent(){
+function shareContent() {
   // let url = document.getElementById("content-url").value;
   // let title = document.getElementById("content-title").value;
   // let text = document.getElementById("content-text").value;
-  let url = "http://shababulalam.com";
-  let title = "Shababul Alams Portfolio";
-  let text = "Share Portfolio";
-  let data = {url: url, text: text, title: title};
-  console.log(data);
-  
-  if (!navigator.share){
-    alert("Your device does not support the Web Share API. Try on an iPhone or Android phone!");
+  let url = "http://shababulalam.com"
+  let title = "Shababul Alams Portfolio"
+  let text = "Share Portfolio"
+  let data = { url: url, text: text, title: title }
+  console.log(data)
+
+  if (!navigator.share) {
+    alert(
+      "Your device does not support the Web Share API. Try on an iPhone or Android phone!",
+    )
+  } else {
+    navigator.share(data)
   }
-  else {
-    navigator.share(data);
-  }
-} 
+}
 
 const IndexPage = () => {
   return (
@@ -36,8 +37,8 @@ const IndexPage = () => {
             borderRadius: ["20%", "20%", "50%", "50%", "20%"],
             transition: {
               repeatType: "loop",
-              repeat: Infinity
-            }
+              repeat: Infinity,
+            },
           }}
         >
           <SEO />
@@ -153,9 +154,14 @@ const IndexPage = () => {
             </div>
           </Section>
 
-          <section className="flex p-2 text-sm border rounded" onClick={shareContent} >
-            Share this page
-          </section>
+          <div className="flex">
+            <section
+              className="p-2 text-sm border rounded"
+              onClick={shareContent}
+            >
+              Share this page
+            </section>
+          </div>
         </div>
       </Layout>
     </>
